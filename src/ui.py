@@ -1,24 +1,26 @@
+import tkinter as tk
+
 class BMIApp:
     def __init__(self, master):
         self.master = master
         master.title("BMI Calculator")
 
-        self.label_weight = Label(master, text="Weight (kg):")
+        self.label_weight = tk.Label(master, text="Weight (kg):")
         self.label_weight.pack()
 
-        self.entry_weight = Entry(master)
+        self.entry_weight = tk.Entry(master)
         self.entry_weight.pack()
 
-        self.label_height = Label(master, text="Height (m):")
+        self.label_height = tk.Label(master, text="Height (m):")
         self.label_height.pack()
 
-        self.entry_height = Entry(master)
+        self.entry_height = tk.Entry(master)
         self.entry_height.pack()
 
-        self.calculate_button = Button(master, text="Calculate BMI", command=self.calculate_bmi)
+        self.calculate_button = tk.Button(master, text="Calculate BMI", command=self.calculate_bmi)
         self.calculate_button.pack()
 
-        self.result_label = Label(master, text="")
+        self.result_label = tk.Label(master, text="")
         self.result_label.pack()
 
     def calculate_bmi(self):
