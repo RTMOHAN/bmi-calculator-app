@@ -1,0 +1,2 @@
+cd /Users/rajibtripura/Desktop/Python/BMI/bmi-calculator-app/src
+python main.py
